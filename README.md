@@ -104,6 +104,7 @@ project web
 
 ```
 about
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -190,6 +191,7 @@ about
 
 ```
 product
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -294,12 +296,13 @@ product
 
 ```
 final
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Products - hiya jewellery</title>
+  <title>Contact Us - hiya jewellery</title>
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -308,9 +311,10 @@ final
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <a class="navbar-brand" href="#">hiya jewellery</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="nav
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
@@ -319,74 +323,59 @@ final
         <li class="nav-item">
           <a class="nav-link" href="about.html">About</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="t
-            Products
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Over-the-counter (OTC) hiya</a>
-            <a class="dropdown-item" href="#">no</a>
-            <a class="dropdown-item" href="#">no</a>
-            <a class="dropdown-item" href="#">Supplements</a>
-          </div>
+        <li class="nav-item">
+          <a class="nav-link" href="product.html">Products</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Login</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Register</a>
+          <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
         </li>
       </ul>
     </div>
   </nav>
 
   <!-- Page Content -->
-  <div class="container mt-3">
+  <div class="container mt-5">
     <div class="row">
-      <div class="col-md-12">
-        <h1>Our Product categories</h1>
-        <div class="card-deck">
-          <div class="card">
-            <img src="c:\Users\admin\Desktop\project img 1.jpg" class="card-img-top" alt="Product 1" width="200" height="200">
-            <div class="card-body">
-              <h5 class="card-title">Bridal Gold Necklace</h5>
-              <p class="card-text">Alright, gorgeous bride-to-be, let’s dive deep into the world of modern bridal gold necklaces
-              <a href="#" class="btn btn-primary">Buy Now</a>
-            </div>
+      <div class="col-md-8">
+        <h1>Contact Us</h1>
+        <p>For any inquiries or feedback, please fill out the form below and we will get back to you as soon as possible.</p>
+        <form>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
           </div>
-          <div class="card">
-            <img src="c:\Users\admin\Desktop\project img2.jpg" class="card-img-top" alt="Product 2" width="200" height="200">
-            <div class="card-body">
-              <h5 class="card-title">Diamond set</h5>
-              <p class="card-text">
-                Our diamond necklace set designs features intricate patterns, a combination of large stones, or even simple soli
-              <a href="#" class="btn btn-primary">Buy Now</a>
-            </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
           </div>
-          <div class="card">
-            <img src="c:\Users\admin\Desktop\project img 3.webp" class="card-img-top" alt="Product 3" width="200" height="200">
-            <div class="card-body">
-              <h5 class="card-title">Mariyan Rose Gold Bracelets</h5>
-              <p class="card-text">Make your outfit shine with beautifully crafted Gold Bracelets. These newest gold and diamond
-              <a href="#" class="btn btn-primary">Buy Now</a>
-            </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows=3" placeholder="Enter your message"></textarea>
           </div>
-        </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="col-md-4">
+        <h2>hiya jewellery</h2>
+        <address>
+          <strong>Address:</strong><br>
+          23-422/KT Road, More Super Market Annarao Circle, Tirupathi.AP<br>
+          India, 510501<br><br>
+          <strong>Email:</strong><br>
+          abc@hiya_jewellery.com<br><br>
+          <strong>Phone:</strong><br>
+          9876543210
+        </address>
       </div>
     </div>
   </div>
+  <body background="back.png" style="background-repeat: no-repeat; background-size: cover;">
+
 
   <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-4 mt-5">
-    <p>&copy; 2024 hiya jewellery. All rights reserved. By M.Saradeepika</p>
+  <footer class="bg-dark text-white text-center py-4 mt-2">
+    <p>&copy; 2024 hiya jewellery. All rights reserved.BY M.Saradeepika</p>
   </footer>
-  <body background="bg.jpeg" style="background-repeat: no-repeat; background-size: cover;">
-
 
   <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
